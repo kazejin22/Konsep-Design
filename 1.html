@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title data-i18n="aboutTitle">Tiya Golf Club - About</title>
+        <title data-i18n="homeTitle">Tiya Golf Club - Home</title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,12 +29,6 @@
                 background-position: center;
                 background-repeat: no-repeat;
             }
-            .vision-mission-section {
-                background-image: url('images/bg1.jpg');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
         </style>
 
     </head>
@@ -47,20 +41,17 @@
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
-                        <span class="navbar-brand-text">
-                            Tiya
-                            <small>Golf Club</small>
-                        </span>
+                        <span class="navbar-brand-text" data-i18n="clubName">Tiya<small data-i18n="clubSubName">Golf Club</small></span>
                     </a>
 
                     <div class="d-lg-none ms-auto me-3">
                         <div class="dropdown">
-                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                 Language
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="languageSwitcherMobile">
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,12 +81,12 @@
 
                         <div class="d-none d-lg-block ms-lg-3">
                             <div class="dropdown">
-                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                     Language
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -113,21 +104,21 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <h2 class="text-white">Welcome to the club</h2>
+                            <h2 class="text-white" data-i18n="heroWelcome">Welcome to the club</h2>
 
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>Tiya is</span>
+                                <span data-i18n="heroTiyaIs">Tiya is</span>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">Modern</b>
-                                    <b>Creative</b>
-                                    <b>Lifestyle</b>
+                                    <b class="is-visible" data-i18n="heroModern">Modern</b>
+                                    <b data-i18n="heroCreative">Creative</b>
+                                    <b data-i18n="heroLifestyle">Lifestyle</b>
                                 </span>
                             </h1>
 
                             <div class="custom-btn-group">
-                                <a href="about.html" class="btn custom-btn me-3">Our Story</a>
+                                <a href="about.html" class="btn custom-btn me-3" data-i18n="heroOurStory">Our Story</a>
 
-                                <a href="portfolio.html" class="link">Become a member</a>
+                                <a href="portfolio.html" class="link" data-i18n="heroBecomeMember">Become a member</a>
                             </div>
                         </div>
 
@@ -138,65 +129,40 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
             </section>
 
-            <section class="about-section section-padding" id="section_2">
+            <section class="features-section section-padding">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4" data-i18n="aboutPageTitle">About Tiya</h2>
+                            <h2 class="mb-lg-5 mb-4" data-i18n="servicesTitle">Our Services</h2>
                         </div>
 
-                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
-                            <h3 class="mb-3" data-i18n="aboutHistoryTitle">Tiya Club History</h3>
-
-                            <p data-i18n="aboutHistoryText1"><strong>Since 1984</strong>, Tiya is ranked #8 in the top 10 golf courses in the world. Tiya is Bootstrap 5 HTML CSS template for golf clubs. Anyone can modify and use this layout for commercial purposes.</p>
-
-                            <p data-i18n="aboutHistoryText2">Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please tell your friends about our website. Thank you for visiting.</p>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4 data-i18n="founderName">Michael</h4>
-
-                                    <p class="ms-auto" data-i18n="founderRole">Founder</p>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="card">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                                <div class="card__content">
+                                    <p class="card__title" data-i18n="service1Title">Professional Courses</p>
+                                    <p class="card__description" data-i18n="service1Text">Our courses are designed by world-renowned architects to challenge and inspire golfers of all levels.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-linkedin"></a>
-                                        </li>
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-                                    </ul>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="card">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                                <div class="card__content">
+                                    <p class="card__title" data-i18n="service2Title">Luxury Clubhouse</p>
+                                    <p class="card__description" data-i18n="service2Text">Relax and unwind in our luxurious clubhouse, complete with a pro shop, restaurant, and bar.</p>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4 data-i18n="coFounderName">Sandy</h4>
-
-                                    <p class="ms-auto" data-i18n="coFounderRole">Co-Founder</p>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                                <div class="card__content">
+                                    <p class="card__title" data-i18n="service3Title">Community Events</p>
+                                    <p class="card__description" data-i18n="service3Text">Join our vibrant community and participate in a variety of social events and tournaments throughout the year.</p>
                                 </div>
                             </div>
                         </div>
@@ -205,56 +171,59 @@
                 </div>
             </section>
 
-            <section class="vision-mission-section section-padding">
+            <section class="testimonial-section section-padding">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="vision-block">
-                                <div class="vision-block-icon-wrap">
-                                    <i class="bi-eye-fill"></i>
-                                </div>
-                                <h3 class="vision-block-title" data-i18n="visionTitle">Our Vision</h3>
-                                <p class="vision-block-text" data-i18n="visionText">To be the leading golf club in the region, providing a world-class experience for our members and guests.</p>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 col-12">
-                            <div class="mission-block">
-                                <div class="mission-block-icon-wrap">
-                                    <i class="bi-bullseye"></i>
-                                </div>
-                                <h3 class="mission-block-title" data-i18n="missionTitle">Our Mission</h3>
-                                <p class="mission-block-text" data-i18n="missionText">To provide a premier golfing experience, while fostering a strong sense of community and a commitment to the environment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="partners-section section-padding">
-                <div class="container">
-                    <div class="row">
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4" data-i18n="partnersTitle">Our Partners</h2>
+                            <h2 class="mb-lg-5 mb-4" data-i18n="testimonialsTitle">Testimonials</h2>
                         </div>
-                        <div class="col-lg-12 col-12">
-                            <div class="logo-scroller">
-                                <div class="logo-scroller-inner">
-                                    <img src="images/partners/partner-1.png" alt="Partner 1">
-                                    <img src="images/partners/partner-2.png" alt="Partner 2">
-                                    <img src="images/partners/partner-3.png" alt="Partner 3">
-                                    <img src="images/partners/partner-1.png" alt="Partner 1">
-                                    <img src="images/partners/partner-2.png" alt="Partner 2">
-                                    <img src="images/partners/partner-3.png" alt="Partner 3">
-                                    <img src="images/partners/partner-1.png" alt="Partner 1">
-                                    <img src="images/partners/partner-2.png" alt="Partner 2">
-                                    <img src="images/partners/partner-3.png" alt="Partner 3">
-                                    <img src="images/partners/partner-1.png" alt="Partner 1">
-                                    <img src="images/partners/partner-2.png" alt="Partner 2">
-                                    <img src="images/partners/partner-3.png" alt="Partner 3">
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-image-wrap">
+                                    <img src="images/anna-rosar-ew-olGvgCCs-unsplash.jpg" class="testimonial-block-image img-fluid" alt="">
+                                </div>
+
+                                <div class="testimonial-block-info">
+                                    <p data-i18n="testimonial1Text">"The best golf club I've ever been a member of. The courses are challenging, the staff is friendly, and the facilities are top-notch."</p>
+
+                                    <h5 class="testimonial-block-name" data-i18n="testimonial1Name">John Doe</h5>
+                                    <p class="testimonial-block-company" data-i18n="testimonial1Info">Member since 2018</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-image-wrap">
+                                    <img src="images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg" class="testimonial-block-image img-fluid" alt="">
+                                </div>
+
+                                <div class="testimonial-block-info">
+                                    <p data-i18n="testimonial2Text">"I love the sense of community at Tiya Golf Club. I've made so many new friends and improved my game thanks to the excellent coaching staff."</p>
+
+                                    <h5 class="testimonial-block-name" data-i18n="testimonial2Name">Jane Smith</h5>
+                                    <p class="testimonial-block-company" data-i18n="testimonial2Info">Member since 2020</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-block-image-wrap">
+                                    <img src="images/anna-rosar-ew-olGvgCCs-unsplash.jpg" class="testimonial-block-image img-fluid" alt="">
+                                </div>
+
+                                <div class="testimonial-block-info">
+                                    <p data-i18n="testimonial3Text">"A truly world-class experience. I would recommend Tiya Golf Club to any serious golfer looking for a challenge."</p>
+
+                                    <h5 class="testimonial-block-name" data-i18n="testimonial3Name">Peter Jones</h5>
+                                    <p class="testimonial-block-company" data-i18n="testimonial3Info">Member since 2015</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -307,7 +276,7 @@
         <script src="js/language.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const currentPage = window.location.pathname.split('/').pop();
+                const currentPage = window.location.pathname.split('/').pop() || 'index.html';
                 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
                 navLinks.forEach(link => {
                     link.classList.remove('active');
