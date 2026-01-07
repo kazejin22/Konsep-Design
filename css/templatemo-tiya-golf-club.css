@@ -1,6 +1,6 @@
 /*
 
-TemplateMo 587 Tiya Golf Club
+TemplateMo 587 Konsep Design Golf Club
 
 https://templatemo.com/tm-587-tiya-golf-club
 
@@ -464,11 +464,17 @@ strong {
 
 .navbar .navbar-brand-image {
   filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.navbar .navbar-brand-image:hover {
+  filter: none;
 }
 
 .navbar-brand-image {
-  width: 48px;
-  height: 48px;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 
 .navbar-brand-text {
@@ -1042,6 +1048,7 @@ strong {
 -----------------------------------------*/
 .site-footer {
   position: relative;
+  padding-top: 30px;
   padding-bottom: 200px;
 }
 
@@ -1065,6 +1072,141 @@ strong {
 .site-footer p span {
   font-weight: var(--font-weight-medium);
   margin-right: auto;
+}
+
+.site-footer .footer-about {
+  color: var(--p-color);
+  line-height: 1.7;
+}
+
+.site-footer .footer-links a {
+  color: var(--p-color);
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+}
+
+.site-footer .footer-links a:hover {
+  color: var(--custom-btn-bg-color);
+}
+
+.site-footer .footer-contact i {
+  color: var(--custom-btn-bg-color);
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.site-footer .footer-newsletter .form-control {
+  border-radius: var(--border-radius-large);
+  border-width: 2px;
+  box-shadow: none;
+}
+
+.site-footer .footer-newsletter .form-control:focus {
+  border-color: var(--dark-color);
+  box-shadow: none;
+}
+
+.site-footer .footer-newsletter .btn {
+  border-radius: var(--border-radius-large);
+}
+
+.site-footer .footer-bottom {
+  border-top: 0;
+}
+
+.site-footer .back-top {
+  color: var(--p-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.site-footer .back-top:hover {
+  color: var(--custom-btn-bg-color);
+}
+
+@media screen and (max-width: 991px) {
+  .site-footer {
+    padding-top: 10px;
+    padding-bottom: 110px;
+  }
+
+  .site-footer .footer-about {
+    margin-bottom: 0;
+  }
+
+  .site-footer .site-footer-title {
+    margin-top: 18px;
+  }
+
+  .site-footer .footer-links a {
+    display: block;
+    padding: 6px 0;
+  }
+
+  .site-footer .footer-contact p {
+    margin-bottom: 10px;
+  }
+
+  .site-footer .footer-newsletter form {
+    flex-direction: column;
+  }
+
+  .site-footer .footer-newsletter form .form-control {
+    width: 100%;
+  }
+
+  .site-footer .footer-newsletter form .btn {
+    width: 100%;
+  }
+
+  .site-footer .social-icon {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .site-footer {
+    text-align: center;
+    padding-bottom: 95px;
+  }
+
+  .site-footer .footer-links {
+    display: none;
+  }
+
+  .site-footer .navbar-brand {
+    justify-content: center;
+  }
+
+  .site-footer .footer-contact p {
+    justify-content: center;
+  }
+
+  .site-footer .footer-contact,
+  .site-footer .footer-contact a {
+    text-align: center;
+  }
+
+  .site-footer .mb-5 {
+    margin-bottom: 18px !important;
+  }
+
+  .site-footer .mt-3 {
+    margin-top: 10px !important;
+  }
+
+  .site-footer .footer-bottom {
+    margin-top: 12px !important;
+    padding-top: 0 !important;
+  }
+
+  .site-footer .social-icon {
+    justify-content: center;
+  }
 }
 
 
@@ -1399,10 +1541,12 @@ strong {
 /*---------------------------------------
   CERTIFICATIONS SECTION            
 -----------------------------------------*/
-.certifications-section .col-lg {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 20%;
+@media screen and (min-width: 992px) {
+    .certifications-section .col-lg {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 20%;
+    }
 }
 
 .certification-card {
@@ -1446,11 +1590,6 @@ strong {
     border-bottom: none;
 }
 
-@media screen and (max-width: 991px) {
-    .certifications-section .col-lg {
-        max-width: 50%;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .certifications-section .col-lg {
@@ -1549,6 +1688,32 @@ strong {
 .vision-block-text, .mission-block-text {
   font-size: var(--p-font-size);
   line-height: 1.6;
+}
+
+.mission-content {
+    margin-top: 1rem;
+}
+
+.mission-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.mission-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /*---------------------------------------
