@@ -1646,10 +1646,21 @@ strong {
   background-color: var(--section-bg-color);
 }
 
+.vision-mission-section .row {
+    align-items: stretch;
+}
+
+.vision-mission-section .col-lg-6 {
+    display: flex;
+}
+
 .vision-block, .mission-block {
   background-color: var(--white-color);
   border-radius: var(--border-radius-large);
   padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 1rem 3rem rgba(0,0,0,.1);
@@ -1672,6 +1683,7 @@ strong {
   margin-bottom: 20px;
   font-size: 32px;
   transition: all 0.3s ease;
+  align-self: center;
 }
 
 .vision-block:hover .vision-block-icon-wrap, .mission-block:hover .mission-block-icon-wrap {
@@ -1692,6 +1704,9 @@ strong {
 
 .mission-content {
     margin-top: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .mission-list {
