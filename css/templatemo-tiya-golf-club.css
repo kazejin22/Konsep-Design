@@ -1049,7 +1049,7 @@ strong {
 .site-footer {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 }
 
 .site-footer .container {
@@ -1129,7 +1129,7 @@ strong {
 @media screen and (max-width: 991px) {
   .site-footer {
     padding-top: 10px;
-    padding-bottom: 110px;
+    padding-bottom: 150px;
   }
 
   .site-footer .footer-about {
@@ -1171,7 +1171,7 @@ strong {
 @media screen and (max-width: 575px) {
   .site-footer {
     text-align: center;
-    padding-bottom: 95px;
+    padding-bottom: 120px;
   }
 
   .site-footer .footer-links {
@@ -1180,10 +1180,31 @@ strong {
 
   .site-footer .navbar-brand {
     justify-content: center;
+    display: flex;
+    margin: 0 auto 20px auto;
+  }
+
+  .site-footer .footer-contact {
+    text-align: center;
   }
 
   .site-footer .footer-contact p {
-    justify-content: center;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .site-footer .footer-contact p span,
+  .site-footer .footer-contact p a {
+    text-align: center !important;
+    flex: 1;
+    display: block;
+  }
+
+  .site-footer .footer-contact p i {
+    display: none;
   }
 
   .site-footer .footer-contact,

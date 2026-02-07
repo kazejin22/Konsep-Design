@@ -37,6 +37,16 @@
                 background-position: center;
                 background-repeat: no-repeat;
             }
+            .about-image-wrap {
+                border-radius: var(--border-radius-medium);
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            .about-image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
         </style>
 
     </head>
@@ -53,12 +63,12 @@
 
                     <div class="d-lg-none ms-auto me-3">
                         <div class="dropdown">
-                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                 Language
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="languageSwitcherMobile">
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,12 +98,12 @@
 
                         <div class="d-none d-lg-block ms-lg-3">
                             <div class="dropdown">
-                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                     Language
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +154,7 @@
                             <h2 class="mb-lg-5 mb-4" data-i18n="aboutPageTitle">About Konsep Design</h2>
                         </div>
 
-                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
                             <h3 class="mb-3" data-i18n="aboutHistoryTitle">Tentang Perusahaan</h3>
 
                             <p data-i18n="aboutHistoryText1"><strong>PT Konsep Desain Konsultan</strong> adalah perusahaan konsultan bangunan terkemuka yang menyediakan layanan terpadu dalam perencanaan, pengawasan, dan manajemen konstruksi. Dengan dedikasi pada tiga pilar utama—efisiensi biaya, kualitas unggul, dan ketepatan waktu—kami mengubah visi klien menjadi bangunan ikonik yang berkelanjutan.</p>
@@ -152,50 +162,9 @@
                             <p data-i18n="aboutHistoryText2">Tim ahli kami menggabungkan inovasi teknologi dengan pengalaman decades untuk memberikan solusi konstruksi yang tidak hanya memenuhi standar tertinggi, tetapi juga melampaui ekspektasi. Setiap proyek adalah wujud dari komitmen kami terhadap excellence dan kepuasan klien.</p>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4 data-i18n="founderName">Michael</h4>
-
-                                    <p class="ms-auto" data-i18n="founderRole">Founder</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-linkedin"></a>
-                                        </li>
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4 data-i18n="coFounderName">Sandy</h4>
-
-                                    <p class="ms-auto" data-i18n="coFounderRole">Co-Founder</p>
-                                </div>
+                        <div class="col-lg-6 col-md-12 col-12 mb-4 mb-lg-0 mb-md-0">
+                            <div class="about-image-wrap">
+                                <img src="images/Picture7.jpg" class="about-image img-fluid" alt="About Us">
                             </div>
                         </div>
 

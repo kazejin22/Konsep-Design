@@ -47,12 +47,12 @@
 
                     <div class="d-lg-none ms-auto me-3">
                         <div class="dropdown">
-                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcherMobile" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                 Language
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="languageSwitcherMobile">
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                             </ul>
                         </div>
                     </div>
@@ -82,12 +82,12 @@
 
                         <div class="d-none d-lg-block ms-lg-3">
                             <div class="dropdown">
-                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn custom-btn custom-border-btn dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language">
                                     Language
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')">Indonesia</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')" data-i18n="english">English</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('id')" data-i18n="indonesia">Indonesia</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -173,6 +173,12 @@
                                 <div class="contact-info-item">
                                     <div class="contact-info-body">
                                         <strong data-i18n="contactLocation">London, United Kingdom</strong>
+
+                                        <p class="mt-2 mb-1">
+                                            <a href="https://maps.app.goo.gl/kdLUTJ2t2pFDXF3q6?g_st=aw" target="_blank" class="contact-link" data-i18n="contactDirections">
+                                                View on Google Maps
+                                            </a>
+                                        </p>
 
                                         <p class="mt-2 mb-1">
                                             <a href="tel: 010-020-0340" class="contact-link" data-i18n="contactPhone">
